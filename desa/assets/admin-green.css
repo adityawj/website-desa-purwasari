@@ -1,0 +1,56 @@
+/* Tema hijau untuk SB Admin 2 (menggantikan biru bawaan template).
+   Dimuat setelah sb-admin-2.min.css agar menimpa warna primer. */
+:root{--g-main:#1B6B47;--g-dark:#123D2A;--g-light:#2F8F63;--g-soft:#E3F0E8;--g-ring:rgba(27,107,71,.35)}
+
+a{color:var(--g-main)}
+a:hover{color:var(--g-dark)}
+
+/* sidebar, halaman login, dan latar bergradasi */
+.bg-gradient-primary{background-color:var(--g-main);background-image:linear-gradient(180deg,var(--g-main) 10%,var(--g-dark) 100%);background-size:cover}
+.bg-gradient-success{background-color:var(--g-light);background-image:linear-gradient(160deg,var(--g-light) 0%,var(--g-main) 100%);background-size:cover}
+
+/* tombol */
+.btn-primary{color:#fff;background-color:var(--g-main);border-color:var(--g-main)}
+.btn-primary:hover{color:#fff;background-color:var(--g-dark);border-color:var(--g-dark)}
+.btn-primary:focus,.btn-primary.focus{color:#fff;background-color:var(--g-dark);border-color:var(--g-dark);box-shadow:0 0 0 .2rem var(--g-ring)}
+.btn-primary:not(:disabled):not(.disabled):active,.btn-primary:not(:disabled):not(.disabled).active,.show>.btn-primary.dropdown-toggle{color:#fff;background-color:var(--g-dark);border-color:var(--g-dark)}
+.btn-primary:not(:disabled):not(.disabled):active:focus,.btn-primary:not(:disabled):not(.disabled).active:focus{box-shadow:0 0 0 .2rem var(--g-ring)}
+.btn-primary.disabled,.btn-primary:disabled{background-color:var(--g-main);border-color:var(--g-main)}
+.btn-outline-primary{color:var(--g-main);border-color:var(--g-main)}
+.btn-outline-primary:hover,.btn-outline-primary:not(:disabled):not(.disabled):active,.btn-outline-primary:not(:disabled):not(.disabled).active{color:#fff;background-color:var(--g-main);border-color:var(--g-main)}
+.btn-outline-primary:focus{box-shadow:0 0 0 .2rem var(--g-ring)}
+.btn-link{color:var(--g-main)}
+
+/* teks, lencana, dan kartu ringkasan */
+.text-primary{color:var(--g-main)!important}
+a.text-primary:hover,a.text-primary:focus{color:var(--g-dark)!important}
+.bg-primary{background-color:var(--g-main)!important}
+.border-left-primary{border-left:.25rem solid var(--g-main)!important}
+.badge-primary{color:#fff;background-color:var(--g-main)}
+
+/* navigasi pill (tab filter), paginasi DataTables, dropdown */
+.nav-pills .nav-link.active,.nav-pills .show>.nav-link{color:#fff;background-color:var(--g-main)}
+.nav-pills .nav-link{color:var(--g-main)}
+.nav-pills .nav-link:hover:not(.active){background-color:var(--g-soft)}
+.page-link{color:var(--g-main)}
+.page-link:hover{color:var(--g-dark)}
+.page-item.active .page-link{color:#fff;background-color:var(--g-main);border-color:var(--g-main)}
+.page-link:focus{box-shadow:0 0 0 .2rem var(--g-ring)}
+.dropdown-item.active,.dropdown-item:active{color:#fff;background-color:var(--g-main)}
+
+/* formulir */
+.form-control:focus{border-color:var(--g-light);box-shadow:0 0 0 .2rem var(--g-ring)}
+.custom-control-input:checked~.custom-control-label::before{color:#fff;border-color:var(--g-main);background-color:var(--g-main)}
+.custom-control-input:focus~.custom-control-label::before{box-shadow:0 0 0 .2rem var(--g-ring)}
+.custom-control-input:focus:not(:checked)~.custom-control-label::before{border-color:var(--g-light)}
+.form-control-user:focus,.btn-user:focus{box-shadow:0 0 0 .2rem var(--g-ring)}
+
+/* sidebar */
+.sidebar .nav-item .nav-link:focus{outline:none}
+.sidebar-dark .nav-item.active .nav-link{color:#fff}
+.scroll-to-top{background:rgba(18,61,42,.7)}
+.scroll-to-top:hover{background:var(--g-dark)}
+.progress-bar{background-color:var(--g-main)}
+
+/* font Roboto */
+body,button,input,select,textarea,.sidebar,.topbar,.card,.modal,.dropdown-menu,.table,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:"Roboto",system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
